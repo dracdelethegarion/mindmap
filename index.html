@@ -2,11 +2,33 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>Home</title>
     </head>
     <body>
-        <p>This is where the content goes</p>
-
+        <div class="mainWindow">
+            <div class="row">
+                <div id="welcomeMessageDiv" class="col-12">
+                    <h1>Welcome to whatever this is called!</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"></div>
+                <div id="loadButtonDiv" class="col-9">
+                    <button class="loadButton">New Map</button>
+                    <button class="loadButton">Load Map</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-9">
+                    <div id="recentMapsDiv">
+                        <span id="recentMapsTitleSpan">Recent Maps</span><br />
+                        <span class="recentMapSpan"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
